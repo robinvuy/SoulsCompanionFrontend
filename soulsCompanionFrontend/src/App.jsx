@@ -1,5 +1,14 @@
+<<<<<<< Updated upstream
 import { useState } from 'react';
 import { MOCK_BOSSES } from './data/mockBosses';
+=======
+import { useState, react } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
+import './App.css'
+import Header from './components/Header';
+>>>>>>> Stashed changes
 
 export default function App() {
   const [bosses, setBosses] = useState(MOCK_BOSSES);
@@ -13,6 +22,7 @@ export default function App() {
   };
 
   return (
+<<<<<<< Updated upstream
     <div style={{ maxWidth: '600px', margin: '0 auto', padding: '2rem' }}>
       <h1>Souls Boss Companion</h1>
       <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -40,3 +50,25 @@ export default function App() {
     </div>
   );
 }
+=======
+    <>
+      <section id="center">
+        <Header />
+        <div>
+          <h1>Gwubbbbbbbba</h1>
+        </div>
+        <p>
+          Bosses Galore
+        </p> 
+        <img src={reactLogo} />
+        
+      </section>
+
+   
+      <section id="spacer"></section>
+    </>
+  )
+}
+
+export default App
+>>>>>>> Stashed changes
