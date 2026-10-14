@@ -2,7 +2,8 @@ import './App.css'
 import Header from './components/Header'; 
 import Homepage from './components/Homepage';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-import DarkSouls1 from './components/DarkSouls1';
+import DarkSouls1 from './pages/DarkSouls1';
+import BossDetailsPage from './pages/BossDetailsPage';
 
 export default function App() {
   
@@ -17,6 +18,10 @@ export default function App() {
         <Route 
           path="/dark-souls-1"
           element={<DarkSouls1/>}
+        />
+        <Route
+        path="/dark-souls-1/bosses/:id"
+        element={<BossDetailsPage/>}
         />
 
         

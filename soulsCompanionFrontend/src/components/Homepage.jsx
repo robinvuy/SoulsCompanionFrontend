@@ -3,27 +3,20 @@ import { Link } from 'react-router-dom';
 import './Homepage.css';
 
 function Homepage() {
-    const games = [
-            "Dark Souls 1",
-             "Dark Souls 2",
-             "Dark Souls 3",
-             "Bloodborne",
-             "Elden Ring"
-          ];
+    
 
 
     return (
+    <>
+    <h1> Click to get started!</h1>
       <>
-        <ul>
-            {games.map((game) => (
-                <li key = {game}>
-                    <Link to={`/${game.toLowerCase().replaceAll(" ", "-")}`}>
-                        {game}
+                <li key="Dark Souls 1">
+                    <Link to={"/dark-souls-1"}>
+                        Dark Souls 1
                     </Link>
                 </li>
-            ))}
-        </ul>
       </>
+    </>
     )
 }
 

@@ -5,11 +5,7 @@ function Header() {
     return (
       <>
         <div className="Header">
-            <h1>Welcome Souls Players</h1>
-        </div>
-
-        <div className="subheader">
-            <h2>Pick a game</h2>
+            <h1>Souls Companion</h1>
         </div>
       </>
     )
